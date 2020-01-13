@@ -1,0 +1,16 @@
+{
+  "name": "data_wraggling",
+  "version": "1.0.0",
+  "description": "Data wranggline challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jude okafor",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cheerio": "^1.0.0-rc.3",
+    "fast-csv": "^4.0.2"
+  }
+}

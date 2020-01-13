@@ -1,0 +1,56 @@
+{
+    "name": "Datopian Data Wrangling",
+    "title": "Data Wrangling Challenge",
+    "resources": [{
+            "path": "data.csv",
+            "pathType": "local",
+            "name": "Weekly",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "UTF-8",
+            "dialect": {
+                "delimiter": ","
+            },
+            "schema": {
+                "fields": [{
+                        "name": "date",
+                        "type": "string",
+                        "format": "default",
+                        "description": "Weekly date",
+                        "title": "Date"
+                    },
+                    {
+                        "name": "price",
+                        "type": "number",
+                        "format": "default",
+                        "description": "Corresponding price",
+                        "title": "Price"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "src/index.js",
+            "pathType": "local",
+            "name": "index",
+            "format": "js",
+            "mediatype": "application/javascript",
+            "encoding": "ISO-8859-1"
+        }
+    ],
+    "readme": "# entities [![NPM version](http://img.shields.io/npm/v/entities.svg)](https://npmjs.org/package/entities) [![Downloads](https://img.shields.io/npm/dm/entities.svg)](https://npmjs.org/package/entities) [![Build Status](http://img.shields.io/travis/fb55/entities.svg)](http://travis-ci.org/fb55/entities) [![Coverage](http://img.shields.io/coveralls/fb55/entities.svg)](https://coveralls.io/r/fb55/entities)\n\nEn- & decoder for XML/HTML entities.\n\n## How to…\n\n### …install `entities`\n\n    npm i entities\n\n### …use `entities`\n\n```javascript\nconst entities = require(\"entities\");\n//encoding\nentities.escape(\"&#38;\"); // \"&#x26;#38;\"\nentities.encodeXML(\"&#38;\"); // \"&amp;#38;\"\nentities.encodeHTML(\"&#38;\"); // \"&amp;&num;38&semi;\"\n//decoding\nentities.decodeXML(\"asdf &amp; &#xFF; &#xFC; &apos;\"); // \"asdf & ÿ ü '\"\nentities.decodeHTML(\"asdf &amp; &yuml; &uuml; &apos;\"); // \"asdf & ÿ ü '\"\n```\n\n---\n\nLicense: BSD-2-Clause\n\n[Get supported entities with the Tidelift Subscription](https://tidelift.com/subscription/pkg/npm-entities?utm_source=npm-entities&utm_medium=referral&utm_campaign=readme)\n\n## Security contact information\n\nTo report a security vulnerability, please use the [Tidelift security contact](https://tidelift.com/security).\nTidelift will coordinate the fix and disclosure.\n",
+    "licenses": [{
+        "path": "http://opendatacommons.org/licenses/pddl/",
+        "title": "Open Data Commons Public Domain",
+        "name": "ODC-PDDL-1.0"
+    }],
+    "keywords": [
+        "Henry Hub"
+    ],
+    "contributors": [{
+        "title": "Jude Okafor",
+        "role": "author",
+        "email": "okaforjudechukwuebuka@gmail.com"
+    }],
+    "description": "Well computed data abstracted from Henry Hub Natural Gas Spot Price"
+}
