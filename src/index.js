@@ -20,4 +20,4 @@ const ws = fs.createWriteStream("data.csv");
     } catch (error) {
         console.error(error);
     }
-}());
+}()); 
